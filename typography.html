@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typography | Material Design</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="libs/css-reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header" id="up">
+        <nav class="header-links">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="material-system.html">System</a></li>
+                <li><a href="material-foundation.html">Foundation</a></li>
+                <li><a href="material-guidelines.html">Guidelines</a></li>
+                <li><a href="examples.html">Examples</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="chips">
+                <span>Material Foundation</span>
+                <span>Typography</span>
+            </div>
+            <div class="go-back">
+                <a href="material-foundation.html" class="go-back-link">
+                    <img src="img/chevron_left.svg" alt="Arrow back">
+                    <span>Go back</span>
+                </a>
+            </div>
+            <section class="page-section" id="the-type-system">
+                <div class="big-header">
+                    <h3>The type system</h3>
+                    <p>Use typography to present your design and content as clearly and efficiently as possible.</p>
+                </div>
+                <div class="page-section-block" id="type-scale">
+                    <div class="small-header">
+                        <h4>Type scale</h4>
+                        <p>The Material Design type scale includes a range of contrasting styles that support the needs of your product and its content.</p>
+                        <br />
+                        <p>The type scale is a combination of thirteen styles that are supported by the type system. It contains reusable categories of text, each with an intended application and meaning.</p>
+                    </div>
+                </div>
+                <div class="page-section-block" id="example-type-scale">
+                    <div class="small-header">
+                        <h4>Example type scale</h4>
+                        <p>This example type scale uses the Roboto typeface for all headlines, subtitles, body, and captions, creating a cohesive typography experience. Hierarchy is communicated through differences in font weight (Light, Medium, Regular), size, letter spacing, and case.</p>
+                    </div>
+                    <img src="img/typography/img1.jpg" alt="Example type scale" class="page-section-image">
+                    <div class="page-section-caption">The Material Design type scale. (Letter spacing values are compatible with Sketch.)</div>
+                </div>
+                <div class="page-section-block" id="font-size-units">
+                    <div class="small-header">
+                        <h4>Font size units</h4>
+                        <p>The following units are used to express font size on Android, iOS, and the web.</p>
+                    </div>
+                    <img src="img/typography/img2.jpg" alt="Font size units" class="page-section-image">
+                    <div class="page-section-subtitle">Example conversions</div>
+                    <img src="img/typography/img3.jpg" alt="Example conversions" class="page-section-image">
+                    <div class="page-section-caption">Web browsers calculate the REM (the root em size) based on the root element size. The default for modern web browsers is 16px, so the conversion is SP_SIZE/16 = rem.</div>
+                </div>
+                <div class="page-section-block" id="letter-spacing-units">
+                    <div class="small-header">
+                        <h4>Letter spacing units</h4>
+                        <p>The following units are for spacing letters in a UI.</p>
+                    </div>
+                    <img src="img/typography/img4.jpg" alt="Letter spacing units" class="page-section-image">
+                    <div class="page-section-subtitle">Letter spacing examples</div>
+                    <img src="img/typography/img5.jpg" alt="Letter spacing examples" class="page-section-image">
+                </div>
+            </section>
+            <section class="page-section" id="applying-the-type-scale">
+                <div class="big-header">
+                    <h3>Applying the type scale</h3>
+                    <p>The type scale appears as text in components and the overall layout. Type attributes can use custom values for the typeface, font, case, size, and letter spacing.</p>
+                </div>
+                <img src="img/typography/img6.jpg" alt="Applying the type scale" class="page-section-image">
+                <div class="page-section-block" id="headlines">
+                    <div class="small-header">
+                        <h4>Headlines</h4>
+                        <p>In the type scale, headlines span from a range of 1 through 6. Headlines are the largest text on the screen, reserved for short, important text or numerals.</p>
+                        <br />
+                        <p>For headlines, you can choose an expressive font, such as a display, handwritten, or script style. These unconventional font designs have details and intricacy that help attract the eye.</p>
+                    </div>
+                    <img src="img/typography/img7.jpg" alt="Headlines" class="page-section-image">
+                    <div class="page-section-caption">A display style is used for Headline 2.</div>
+                    <img src="img/typography/img8.jpg" alt="Headlines" class="page-section-image">
+                    <div class="page-section-caption">A script style is used for Headline 3.</div>
+                </div>
+                <div class="page-section-block" id="subtitles">
+                    <div class="small-header">
+                        <h4>Subtitles</h4>
+                        <p>Subtitles are smaller than headlines. They are typically reserved for medium-emphasis text that is shorter in length. Serif or sans serif typefaces work well for subtitles.</p>
+                    </div>
+                    <img src="img/typography/img9.jpg" alt="Subtitles" class="page-section-image">
+                    <div class="page-section-caption">A sans serif typeface is used for Subtitle 1.</div>
+                </div>
+                <div class="page-section-block" id="body">
+                    <div class="small-header">
+                        <h4>Body</h4>
+                        <p>Body text comes in ranges 1-2, and it’s typically used for long-form writing as it works well for small text sizes. For longer sections of text, a serif or sans serif typeface is recommended.</p>
+                    </div>
+                    <img src="img/typography/img10.jpg" alt="Body" class="page-section-image">
+                    <div class="page-section-caption">A serif typeface is used for Body 1.</div>
+                    <img src="img/typography/img11.jpg" alt="Body" class="page-section-image">
+                    <div class="page-section-caption">A sans serif typeface is used for Body 2.</div>
+                </div>
+                <div class="page-section-block" id="button">
+                    <div class="small-header">
+                        <h4>Button</h4>
+                        <p>Button text is a call to action used by different types of buttons (such as text, outlined and contained buttons) and in tabs, dialogs, and cards.</p>
+                    </div>
+                    <img src="img/typography/img12.jpg" alt="Button" class="page-section-image">
+                    <div class="page-section-caption">An all caps sans serif typeface being used for a button.</div>
+                </div>
+            </section>
+            
+            <section class="page-section" id="type-properties">
+                <div class="big-header">
+                    <h3>Type properties</h3>
+                    <p>A typeface is a collection of letters. While each letter is unique, certain shapes are shared across letters. A typeface represents shared patterns across a collection of letters.</p>
+                </div>
+                <img src="img/typography/img13.jpg" alt="Type properties" class="page-section-image">
+                <div class="page-section-block" id="baseline">
+                    <div class="small-header">
+                        <h4>Baseline</h4>
+                        <p>The baseline is the invisible line upon which a line of text rests. In Material Design, the baseline is an important specification in measuring the vertical distance between text and an element.</p>
+                    </div>
+                    <img src="img/typography/img14.jpg" alt="Baseline" class="page-section-image">
+                </div>
+                <div class="page-section-block" id="measurement-from-the-baseline">
+                    <div class="small-header">
+                        <h4>Measurement from the baseline</h4>
+                        <p>Specify distances from UI elements from the baseline. Baseline values are software-agnostic, so they work in any design program, and work with the grid. On Android and iOS, code can be translated from baseline-relative specs into padding. For the web, automate the calculation using Sass or CSS.</p>
+                    </div>
+                    <div class="cards">
+                        <div class="big-card">
+                            <img src="img/typography/img15.jpg" alt="Measurement from the baseline" class="big-card-image">
+                            <p class="big-card-text">Reference baselines for vertical alignment, instead of bounding boxes. This produces more accurate implementation across design software and platforms.</p>
+                        </div>
+                        <div class="big-card">
+                            <img src="img/typography/img16.jpg" alt="Measurement from the baseline" class="big-card-image">
+                            <p class="big-card-text">Measure text in relation to other components.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="page-section-block" id="сap-height">
+                    <div class="small-header">
+                        <h4>Cap height</h4>
+                        <p>Cap height refers to the height of a typeface’s flat capital letters (such as M or I) measured from the baseline. Round and pointed capital letters, such as S and A, are optically adjusted by being drawn with a slight overshoot above the cap height to achieve the effect of being the same size. Every typeface has a unique cap height.</p>
+                    </div>
+                    <img src="img/typography/img17.jpg" alt="Cap height" class="page-section-image">
+                </div>
+                <div class="page-section-block" id="x-height">
+                    <div class="small-header">
+                        <h4>X-height</h4>
+                        <p>X-height refers to the height of the lowercase x for a typeface, and it indicates how tall or short each glyph in a typeface will be.
+                            Typefaces with tall x-heights have better legibility at small font sizes, as the white space within each letter is more legible.</p>
+                    </div>
+                    <img src="img/typography/img18.jpg" alt="X-height" class="page-section-image">
+                </div>
+                <div class="page-section-block" id="weight">
+                    <div class="small-header">
+                        <h4>Weight</h4>
+                        <p>Weight refers to the relative thickness of a font’s stroke. A typeface can come in many weights; and four to six weights is a typical number available for a typeface.</p>
+                    </div>
+                    <img src="img/typography/img19.jpg" alt="Weight" class="page-section-image">
+                    <div class="page-section-caption">
+                        <span>Common weights:</span>
+                        <ul style="list-style-type: decimal;">
+                            <li>Light</li>
+                            <li>Regular</li>
+                            <li>Medium</li>
+                            <li>Bold</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="page-section" id="type-classification">
+                <div class="big-header">
+                    <h3>Type classification</h3>
+                </div>
+                <div class="page-section-block" id="serif">
+                    <div class="small-header">
+                        <h4>Serif</h4>
+                        <p>A serif is a small shape or projection that appears at the beginning or end of a stroke on a letter. Typefaces with serifs are called serif typefaces. Serif fonts are classified as one of the following:</p>
+                    </div>
+                    <div class="types">
+                        <div class="type">
+                            <p class="type-title">Old-Style serifs have</p>
+                            <div class="type-text">
+                                <ul>
+                                    <li>Low contrast between thick and thin strokes</li>
+                                    <li>Diagonal stress in the strokes</li>
+                                    <li>Slanted serifs on lower-case ascenders</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="type">
+                            <p class="type-title">Transitional serifs have</p>
+                            <div class="type-text">
+                                <ul>
+                                    <li>High contrast between thick and thin strokes</li>
+                                    <li>Medium-High x-height</li>
+                                    <li>Vertical stress in the strokes</li>
+                                    <li>Bracketed serifs</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="type">
+                            <p class="type-title">Neoclassical serifs have</p>
+                            <div class="type-text">
+                                <ul>
+                                    <li>Very high contrast between thick and thin strokes</li>
+                                    <li>Vertical stress in the strokes</li>
+                                    <li>“Ball” terminal strokes</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="type">
+                            <p class="type-title">Slab serifs have</p>
+                            <div class="type-text">
+                                <ul>
+                                    <li>Heavy serifs with imperceptible differences between the stroke weight</li>
+                                    <li>Minimal or no bracketing</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="img/typography/img20.jpg" alt="Serif" class="page-section-image">
+                    <div class="page-section-caption">
+                        <ul style="list-style-type: decimal;">
+                            <li>EB Garamond, old-style serif</li>
+                            <li>Libre Baskerville, transitional serif</li>
+                            <li>Libre Bodoni, didone / neoclassical serif</li>
+                            <li>Bitter, slab serif</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="page-section-block" id="sans-serif">
+                    <div class="small-header">
+                        <h4>Sans Serif</h4>
+                        <p>A typeface without serifs is called a sans serif typeface, from the French word “sans” that means "without." Sans serifs can be classified as one of the following:</p>
+                    </div>
+                    <div class="types">
+                        <div class="type">
+                            <p class="type-title">Grotesque</p>
+                            <div class="type-text">Low contrast between thick and thin strokes, vertical or no observable stress</div>
+                        </div>
+                        <div class="type">
+                            <p class="type-title">Humanist</p>
+                            <div class="type-text">Medium contrast between thick and thin strokes, slanted stress</div>
+                        </div>
+                        <div class="type">
+                            <p class="type-title">Geometric</p>
+                            <div class="type-text">Low contrast between thick and thin strokes, with vertical stress, and circular round forms</div>
+                        </div>
+                    </div>
+                    <img src="img/typography/img21.jpg" alt="Sans Serif" class="page-section-image">
+                    <div class="page-section-caption">
+                        <ul style="list-style-type: decimal;">
+                            <li>Work Sans, grotesque sans serif</li>
+                            <li>Alegreya Sans, humanist sans serif</li>
+                            <li>Libre Bodoni, didone / neoclassical serif</li>
+                            <li>Quicksand, geometric sans serif</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="page-section-block" id="monospace">
+                    <div class="small-header">
+                        <h4>Monospace</h4>
+                        <p>Monospace typefaces display all characters with the same width.</p>
+                    </div>
+                    <img src="img/typography/img22.jpg" alt="Monospace" class="page-section-image">
+                    <div class="page-section-caption">
+                        <ul style="list-style-type: decimal;">
+                            <li>Roboto Mono, monospace</li>
+                            <li>Space Mono, monospace</li>
+                            <li>VT323, monospace</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="page-section-block" id="handwriting">
+                    <div class="small-header">
+                        <h4>Handwriting</h4>
+                        <p>Handwriting typefaces are unconventional with a natural, handwritten feel. These typically are used as H1 - H6 in your type scale. They come in the following forms:</p>
+                    </div>
+                    <div class="types">
+                        <div class="type">
+                            <p class="type-title">Black letter</p>
+                            <div class="type-text">High contrast, narrow, with straight lines and angular curves</div>
+                        </div>
+                        <div class="type">
+                            <p class="type-title">Script</p>
+                            <div class="type-text">Replication of calligraphic styles of writing (more formal)</div>
+                        </div>
+                        <div class="type">
+                            <p class="type-title">Handwriting</p>
+                            <div class="type-text">Replication of handwriting (less formal)</div>
+                        </div>
+                    </div>
+                    <img src="img/typography/img23.jpg" alt="Handwriting" class="page-section-image">
+                    <div class="page-section-caption">
+                        <ul style="list-style-type: decimal;">
+                            <li>UnifrakturMaguntia, black letter</li>
+                            <li>Dancing Script, script</li>
+                            <li>Libre Bodoni, didone / neoclassical serif</li>
+                            <li>Indie Flower, handwriting</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="page-section-block" id="display">
+                    <div class="small-header">
+                        <h4>Display</h4>
+                        <p>A miscellaneous category for all classification types that are only suitable for use at large point sizes. Display fonts typically are used as H1 - H6 in your type scale.</p>
+                    </div>
+                    <img src="img/typography/img24.jpg" alt="Display" class="page-section-image">
+                    <div class="page-section-caption">
+                        <ul style="list-style-type: decimal;">
+                            <li>Shrikhand, display</li>
+                            <li>Chewy, display</li>
+                            <li>Faster One, display</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>Material Design is an adaptable system of guidelines, components, and tools that support the best practices of user interface design. Backed by open-source code, Material Design streamlines collaboration between designers and developers, and helps teams quickly build beautiful products.</p>
+                </div>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="material-system.html">System</a></li>
+                    <li><a href="material-foundation.html">Foundation</a></li>
+                    <li><a href="material-guidelines.html">Guidelines</a></li>
+                    <li><a href="examples.html">Examples</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#up" id="go-up">Go up</a>
+</body>
+</html>

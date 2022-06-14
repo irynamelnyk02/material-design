@@ -1,0 +1,1058 @@
+@font-face {
+    font-family: 'Poppins Light';
+    src: local("../fonts/Poppins-Light"), local("../fonts/Poppins-Light"), url("../fonts/Poppins-Light.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'Poppins Regular';
+    src: local("../fonts/Poppins-Regular"), local("../fonts/Poppins-Regular"), url("../fonts/Poppins-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'Poppins Medium';
+    src: local("../fonts/Poppins-Medium"), local("../fonts/Poppins-Medium"), url("../fonts/Poppins-Medium.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'Poppins Bold';
+    src: local("../fonts/Poppins-Bold"), local("../fonts/Poppins-Bold"), url("../fonts/Poppins-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'OpenSans Regular';
+    src: local("../fonts/OpenSans-Regular"), local("../fonts/OpenSans-Regular"), url("../fonts/OpenSans-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'OpenSans SemiBold';
+    src: local("../fonts/OpenSans-SemiBold"), local("../fonts/OpenSans-SemiBold"), url("../fonts/OpenSans-SemiBold.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal
+}
+
+* {
+    box-sizing: border-box
+}
+
+html {
+    scroll-behavior: smooth
+}
+
+body {
+    position: relative
+}
+
+.container {
+    margin: 0 350px
+}
+
+.header.homepage {
+    height: 100vh;
+    background-image: url("../img/homepage/img1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover
+}
+
+.header-links {
+    height: 80px;
+    background-color: #ffffff
+}
+
+.header-links ul {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 56px;
+    font-size: 24px;
+    line-height: 32px;
+    font-family: 'Poppins Regular'
+}
+
+.header-links ul a {
+    color: #1e1e1e;
+    text-decoration: none
+}
+
+.header-links ul a:hover {
+    color: #5c5c5c
+}
+
+.header-hero {
+    height: calc(100vh - 80px);
+    display: flex;
+    align-items: center
+}
+
+.header-hero h2 {
+    color: #FCFCFC;
+    font-size: 92px;
+    letter-spacing: -0.015em;
+    line-height: 112px;
+    font-family: 'Poppins Bold'
+}
+
+.big-header h3 {
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: 0.0025em;
+    color: #1E1E1E;
+    margin-bottom: 16px;
+    font-family: 'Poppins Regular'
+}
+
+.big-header p, .big-header ul {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.005em;
+    color: #5C5C5C;
+    font-family: 'OpenSans Regular'
+}
+
+.big-header ul {
+    list-style-type: disc;
+    margin-inline-start: 24px
+}
+
+.very-big-header h3 {
+    font-size: 64px;
+    line-height: 72px;
+    letter-spacing: -0.005em;
+    color: #1E1E1E;
+    font-family: 'Poppins Light'
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 32px;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 32px rgba(0, 0, 0, 0.08);
+    border-radius: 16px
+}
+
+.card-icon {
+    width: 56px;
+    height: 56px;
+    display: block
+}
+
+.card-title {
+    margin-top: 24px;
+    font-size: 24px;
+    line-height: 32px;
+    color: #1E1E1E;
+    font-family: 'Poppins Regular'
+}
+
+.card-text {
+    margin: 12px 0 auto 0;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.005em;
+    color: #5C5C5C;
+    font-family: 'OpenSans Regular'
+}
+
+.card .button {
+    margin-top: 72px
+}
+
+.button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 16px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color .15s, color .15s
+}
+
+.button span {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.0125em;
+    text-transform: uppercase;
+    color: #254FE7;
+    font-family: 'OpenSans SemiBold'
+}
+
+.button img {
+    width: 24px;
+    height: 24px
+}
+
+.button:disabled {
+    background-color: #FFFFFF
+}
+
+.button:disabled span {
+    color: #8E8E8E
+}
+
+.button:hover {
+    background-color: #EEF1FD
+}
+
+.button:focus {
+    background-color: #E4EAFC
+}
+
+.footer {
+    margin-top: 195px;
+    padding: 64px 0;
+    background: #FFFFFF
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px
+}
+
+.footer-text {
+    display: flex;
+    justify-content: center
+}
+
+.footer-text p {
+    max-width: 750px;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.004em;
+    color: #5C5C5C;
+    font-family: 'OpenSans Regular'
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 56px
+}
+
+.footer-links a {
+    color: #254FE7;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.005em;
+    font-family: 'OpenSans Regular'
+}
+
+.footer-links a:hover {
+    text-decoration: underline
+}
+
+#go-up {
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+    position: fixed;
+    right: 56px;
+    bottom: 56px;
+    background-color: #254FE7;
+    box-shadow: 0px 4px 32px rgba(37, 79, 231, 0.44);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.0125em;
+    text-transform: uppercase;
+    font-family: 'OpenSans SemiBold'
+}
+
+.go-back {
+    margin-top: 24px;
+    margin-bottom: 40px
+}
+
+.go-back-link {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    text-decoration: none
+}
+
+.go-back-link img {
+    width: 24px;
+    height: 24px
+}
+
+.go-back-link span {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.0015em;
+    color: #1E1E1E;
+    font-family: 'Poppins Regular'
+}
+
+.go-back-link:hover span {
+    text-decoration: underline
+}
+
+.study-section-header {
+    margin-bottom: 40px;
+    font-size: 48px;
+    line-height: 56px;
+    color: #1E1E1E;
+    text-align: center;
+    font-family: 'Poppins Regular'
+}
+
+.study-chapters {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 64px
+}
+
+.study-chapter {
+    width: calc(50% - 16px);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start
+}
+
+.study-chapter h3 {
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: 0.0025em;
+    color: #1E1E1E;
+    font-family: 'Poppins Regular'
+}
+
+.study-chapter p {
+    margin: 16px 0 auto 0;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.005em;
+    color: #5C5C5C;
+    font-family: 'OpenSans Regular'
+}
+
+.study-chapter a {
+    margin-top: 44px
+}
+
+.chips {
+    margin-top: 24px;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.005em;
+    color: #5C5C5C;
+    font-family: 'OpenSans Regular'
+}
+
+.chips span::after {
+    content: "/";
+    margin: 0 16px
+}
+
+.chips span:last-child::after {
+    content: ""
+}
+
+.page-section {
+    margin-bottom: 64px
+}
+
+.page-section:last-child {
+    margin-bottom: 0
+}
+
+.page-section .big-header {
+    margin-bottom: 32px
+}
+
+.page-section .big-header p {
+    max-width: 700px
+}
+
+.page-section .page-section-video {
+    width: 100%;
+    border-radius: 16px;
+    box-shadow: 0px 10px 32px rgba(0, 0, 0, 0.08)
+}
+
+.page-section .page-section-image {
+    border-radius: 16px;
+    width: 100%
+}
+
+.page-section .page-section-caption, .page-section .page-section-caption ul {
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.0025em;
+    color: #5C5C5C;
+    margin-top: 16px;
+    font-family: 'OpenSans Regular'
+}
+
+.page-section .page-section-caption ul {
+    margin-top: 0;
+    list-style-type: disc;
+    margin-inline-start: 24px
+}
+
+.page-section .page-section-subtitle {
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.0025em;
+    color: #5C5C5C;
+    margin: 32px 0 24px 0;
+    font-family: 'OpenSans Regular'
+}
+
+.page-section .page-section-link {
+    display: block;
+    margin-bottom: 32px;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0.0015em;
+    color: #254FE7;
+    font-family: 'Poppins Medium'
+}
+
+.page-section .page-section-link:hover {
+    text-decoration: underline
+}
+
+.page-section .small-header {
+    margin: 48px 0 32px 0
+}
+
+.page-section .small-header p {
+    max-width: 700px
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 32px
+}
+
+.big-card {
+    display: flex;
+    flex-direction: column
+}
+
+.big-card-image {
+    width: 100%;
+    border-radius: 16px
+}
+
+.big-card-title {
+    margin-top: 24px;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0.0015em;
+    color: #1E1E1E;
+    font-family: 'Poppins Medium'
+}
+
+.big-card-text {
+    margin-top: 16px;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.005em;
+    color: #5C5C5C;
+    font-family: 'OpenSans Regular'
+}
+
+.small-header h4 {
+    font-size: 24px;
+    line-height: 32px;
+    color: #1E1E1E;
+    margin-bottom: 16px;
+    font-family: 'Poppins Regular'
+}
+
+.small-header p, .small-header ul {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.005em;
+    color: #5C5C5C;
+    font-family: 'OpenSans Regular'
+}
+
+.small-header ul {
+    list-style-type: disc;
+    margin-inline-start: 24px
+}
+
+.types {
+    margin-bottom: 32px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 32px
+}
+
+.type {
+    display: flex;
+    flex-direction: column
+}
+
+.type-title {
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0.0015em;
+    color: #1E1E1E;
+    font-family: 'Poppins Medium'
+}
+
+.type-text {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.005em;
+    color: #5C5C5C;
+    font-family: 'OpenSans Regular'
+}
+
+.type-text ul {
+    margin-top: 0;
+    list-style-type: disc;
+    margin-inline-start: 24px
+}
+
+.homepage-parts {
+    margin: 112px 0;
+    display: flex;
+    flex-direction: column;
+    row-gap: 56px
+}
+
+.homepage-part {
+    display: flex;
+    justify-content: space-between
+}
+
+.homepage-part .big-header {
+    width: calc(50% - 16px)
+}
+
+.homepage-part img {
+    display: block;
+    border-radius: 16px;
+    width: calc(50% - 16px);
+    box-shadow: 0px 10px 32px rgba(0, 0, 0, 0.08)
+}
+
+.homepage-to-study .very-big-header {
+    text-align: center
+}
+
+.homepage-to-study-blocks {
+    margin-top: 48px
+}
+
+.homepage-to-study-blocks .card {
+    width: calc(100% / 3 - 32px / 3)
+}
+
+.homepage-to-study-blocks .card:last-child {
+    margin-top: 32px;
+    width: 100%
+}
+
+#material-is-the-metaphor .big-card {
+    width: calc(50% - 16px)
+}
+
+#about-material-studies .big-card {
+    width: calc(100% / 3 - 64px / 3)
+}
+
+#principles .big-card {
+    width: calc(100% / 3 - 64px / 3)
+}
+
+#color-swatches img {
+    margin-top: 64px
+}
+
+#headlines div:nth-of-type(2) {
+    margin-bottom: 40px
+}
+
+#body div:nth-of-type(2) {
+    margin-bottom: 40px
+}
+
+#measurement-from-the-baseline .big-card {
+    width: calc(50% - 16px)
+}
+
+#measurement-from-the-baseline .big-card p.big-card-text {
+    margin-top: 24px
+}
+
+#serif .type {
+    width: calc(25% - 24px)
+}
+
+#sans-serif .type {
+    width: calc(100% / 3 - 64px / 3)
+}
+
+#handwriting .type {
+    width: calc(100% / 3 - 64px / 3)
+}
+
+#icon-sizes .big-card {
+    width: calc(50% - 16px)
+}
+
+#icon-sizes .big-card p.big-card-text {
+    margin-top: 24px
+}
+
+#keyline-shapes .big-card {
+    width: calc(50% - 16px)
+}
+
+#layout .big-card {
+    width: calc(50% - 16px)
+}
+
+#complex-icon-shapes .big-card {
+    width: calc(50% - 16px)
+}
+
+#color .type {
+    width: calc(50% - 16px)
+}
+
+#color img {
+    display: block;
+    margin: 0 auto;
+    width: 400px;
+    height: 400px;
+    box-shadow: 0px 10px 32px rgba(0, 0, 0, 0.08)
+}
+
+#using-principles .big-card {
+    width: calc(100% / 3 - 64px / 3)
+}
+
+#when-to-mirror .big-card {
+    width: calc(50% - 16px)
+}
+
+#when-to-mirror .big-card p.big-card-text {
+    margin-top: 24px
+}
+
+@media (max-width: 1600px) {
+    .container {
+        margin: 0 240px
+    }
+
+    .header-links ul {
+        font-size: 20px;
+        line-height: 28px
+    }
+
+    .header-hero h2 {
+        font-size: 72px;
+        line-height: 92px
+    }
+
+    .big-header h3 {
+        font-size: 28px;
+        line-height: 40px;
+        margin-bottom: 8px
+    }
+
+    .big-header p, .big-header ul {
+        font-size: 16px;
+        line-height: 24px
+    }
+
+    .small-header h4 {
+        font-size: 20px;
+        line-height: 24px;
+        margin-bottom: 12px
+    }
+
+    .small-header p, .small-header ul {
+        line-height: 20px
+    }
+
+    .very-big-header h3 {
+        font-size: 56px;
+        line-height: 64px;
+        letter-spacing: 0
+    }
+
+    .homepage-parts {
+        margin: 96px 0
+    }
+
+    .homepage-to-study-blocks .card {
+        width: calc(50% - 16px)
+    }
+
+    .homepage-to-study-blocks .card:last-child {
+        margin-top: 0;
+        width: calc(50% - 16px)
+    }
+
+    .footer {
+        margin-top: 160px
+    }
+
+    .study-section-header {
+        font-size: 40px;
+        line-height: 48px
+    }
+
+    .study-chapter h3 {
+        font-size: 28px;
+        line-height: 36px
+    }
+
+    .page-section .big-header p {
+        max-width: 100%
+    }
+
+    .page-section .small-header p {
+        max-width: 100%
+    }
+
+    .type-title {
+        font-size: 18px;
+        line-height: 24px
+    }
+}
+
+@media (max-width: 1200px) {
+    .container {
+        margin: 0 120px
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        margin: 0 30px
+    }
+}
+
+@media (max-width: 768px) {
+    .header-links {
+        height: 64px
+    }
+
+    .header-links ul {
+        padding: 0 30px;
+        justify-content: flex-start;
+        column-gap: 48px;
+        font-size: 16px;
+        line-height: 24px
+    }
+
+    .header-hero h2 {
+        font-size: 56px;
+        line-height: 72px
+    }
+
+    .homepage-parts {
+        margin: 80px 0;
+        row-gap: 48px
+    }
+
+    .big-header h3 {
+        font-size: 24px;
+        line-height: 36px
+    }
+
+    .very-big-header h3 {
+        font-size: 40px;
+        line-height: 56px
+    }
+
+    .card-icon {
+        width: 48px;
+        height: 48px
+    }
+
+    .card-title {
+        font-size: 20px;
+        line-height: 28px
+    }
+
+    .card .button {
+        margin-top: 56px
+    }
+
+    .footer {
+        margin-top: 120px
+    }
+
+    .footer-links {
+        column-gap: 48px;
+        row-gap: 24px
+    }
+
+    #go-up {
+        right: 30px;
+        bottom: 30px;
+        width: 96px;
+        height: 96px;
+        font-size: 16px;
+        line-height: 24px
+    }
+
+    .study-section-header {
+        font-size: 36px;
+        line-height: 44px
+    }
+
+    .study-chapters {
+        row-gap: 48px
+    }
+
+    .study-chapter {
+        width: calc(50% - 24px)
+    }
+
+    .study-chapter h3 {
+        font-size: 24px;
+        line-height: 32px
+    }
+
+    .study-chapter a {
+        margin-top: 36px
+    }
+
+    .page-section {
+        margin-bottom: 48px
+    }
+
+    .page-section .big-header {
+        margin-bottom: 24px
+    }
+
+    .page-section .page-section-caption, .page-section .page-section-caption ul {
+        line-height: 20px;
+        margin-top: 12px
+    }
+
+    .page-section .page-section-subtitle {
+        line-height: 20px;
+        margin: 24px 0 16px 0
+    }
+
+    .page-section .page-section-link {
+        margin-bottom: 16px;
+        font-size: 16px;
+        line-height: 24px
+    }
+
+    .page-section .small-header {
+        margin: 28px 0 16px 0
+    }
+
+    .big-card-title {
+        margin-top: 16px;
+        font-size: 18px;
+        line-height: 24px
+    }
+
+    .big-card-text {
+        margin-top: 12px;
+        line-height: 20px
+    }
+
+    .types {
+        margin-bottom: 24px
+    }
+
+    .type-text {
+        line-height: 20px
+    }
+
+    #color-swatches img {
+        margin-top: 24px
+    }
+
+    #headlines div:nth-of-type(2) {
+        margin-bottom: 24px
+    }
+
+    #body div:nth-of-type(2) {
+        margin-bottom: 24px
+    }
+
+    #measurement-from-the-baseline .big-card p.big-card-text {
+        margin-top: 16px
+    }
+
+    #serif .type {
+        width: calc(50% - 16px)
+    }
+
+    #icon-sizes .big-card p.big-card-text {
+        margin-top: 16px
+    }
+
+    #when-to-mirror .big-card p.big-card-text {
+        margin-top: 16px
+    }
+}
+
+@media (max-width: 576px) {
+    .header-links ul {
+        overflow-x: auto;
+        white-space: nowrap
+    }
+
+    .header-hero h2 {
+        font-size: 32px;
+        line-height: 40px;
+        letter-spacing: 0.0025em;
+        font-family: 'Poppins Regular'
+    }
+
+    .homepage-parts {
+        margin: 64px 0
+    }
+
+    .homepage-part {
+        flex-wrap: wrap;
+        row-gap: 32px
+    }
+
+    .homepage-part .big-header {
+        width: 100%
+    }
+
+    .homepage-part img {
+        width: 100%
+    }
+
+    .homepage-part:last-child {
+        flex-wrap: wrap-reverse
+    }
+
+    .very-big-header h3 {
+        font-size: 32px;
+        line-height: 40px
+    }
+
+    .homepage-to-study-blocks {
+        margin-top: 40px
+    }
+
+    .homepage-to-study-blocks .card {
+        width: 100%
+    }
+
+    .homepage-to-study-blocks .card:last-child {
+        width: 100%
+    }
+
+    .card .button {
+        margin-top: 32px
+    }
+
+    .footer {
+        margin-top: 36px
+    }
+
+    #go-up {
+        width: 72px;
+        height: 72px;
+        font-size: 14px
+    }
+
+    .study-chapter {
+        width: 100%
+    }
+
+    .types {
+        row-gap: 16px
+    }
+
+    #material-is-the-metaphor .big-card {
+        width: 100%
+    }
+
+    #about-material-studies .big-card {
+        width: 100%
+    }
+
+    #principles .big-card {
+        width: 100%
+    }
+
+    #measurement-from-the-baseline .big-card {
+        width: 100%
+    }
+
+    #serif .type {
+        width: 100%
+    }
+
+    #sans-serif .type {
+        width: 100%
+    }
+
+    #handwriting .type {
+        width: 100%
+    }
+
+    #icon-sizes .big-card {
+        width: 100%
+    }
+
+    #keyline-shapes .big-card {
+        width: 100%
+    }
+
+    #layout .big-card {
+        width: 100%
+    }
+
+    #complex-icon-shapes .big-card {
+        width: 100%
+    }
+
+    #color .type {
+        width: 100%
+    }
+
+    #color img {
+        margin: 0;
+        width: 100%;
+        height: auto
+    }
+
+    #using-principles .big-card {
+        width: 100%
+    }
+
+    #when-to-mirror .big-card {
+        width: 100%
+    }
+}
